@@ -1,8 +1,12 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useRef } from "react";
+import { AiOutlineMenu } from 'react-icons/ai';
 
 export default function Header() {
   const router = useRouter();
+  const refMenu = useRef(null);
+
   return (
     <header className="header">
       <div className="container container_large header__wrapper">
@@ -12,7 +16,7 @@ export default function Header() {
         </a>
 
         {/* nav */}
-        <nav className="header__menu">
+        <nav ref={refMenu} className="header__menu">
           <Link href="/">
             <a className={router.pathname == "/" ? "ui-item ui-item_active header__menu-item ": "ui-item header__menu-item"}>Главная</a>
           </Link>
@@ -33,6 +37,7 @@ export default function Header() {
           </Link>
         </nav>
 
+        <button onClick={()=>refMenu.current.classList.toggle('active')} className="header__bar"><AiOutlineMenu/></button>
         <button className="ui-btn header__btn">Портфолио</button>
       </div>
     </header>
