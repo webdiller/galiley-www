@@ -1,0 +1,101 @@
+html {
+  font-size: 10px;
+  line-height: 1.5rem;
+}
+
+html,
+body,
+input,
+input::placeholder,
+textarea,
+textarea::placeholder,
+button {
+  font-family: "Poppins", "sans-serif";
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+input,
+input::placeholder,
+textarea,
+textarea::placeholder,
+button {
+  font-size: 1.6rem;
+  line-height: 1.45;
+  font-family: "Poppins", "sans-serif";
+}
+
+a,
+input,
+input::placeholder,
+textarea,
+textarea::placeholder,
+button {
+  transition: all 0.3s ease;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.ui-btn {
+  @include reset-btn();
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 200px;
+  min-height: 60px;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: #0065ef;
+  color: #fff;
+}
+
+.ui-item {
+  @include reset-btn();
+  @include reset-link($color: #000);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 40px;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: transparent;
+  transition: all 0.3s ease;
+  &:hover, &:focus {
+    background-color: #e4efff;
+  }
+  &_active {
+    background-color: #e4efff;
+  }
+}
+
+.ui-title {
+  font-size: 30px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  &_large {
+    max-width: 1400px;
+  }
+  &_main {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}

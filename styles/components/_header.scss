@@ -1,6 +1,24 @@
 .header {
-    &__wrapper {
-        display: flex;
-        align-items: center;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+  &__logo-link {
+    margin-right: auto;
+  }
+  &__logo-img {
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  &__menu-item {
+    &:not(:last-child) {
+      margin-right: 20px;
     }
+  }
+  &__btn {
+  }
 }
