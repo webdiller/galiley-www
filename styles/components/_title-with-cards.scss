@@ -1,0 +1,18 @@
+.title-with-cards {
+  &__wrapper {
+  }
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    column-gap: 10%;
+    margin-bottom: 50px;
+  }
+  &__title {
+  }
+  &__text {
+  }
+  &__cards {
+  }
+  &__description {
+  }
+}

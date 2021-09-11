@@ -27,7 +27,8 @@ textarea,
 textarea::placeholder,
 button {
   font-size: 1.6rem;
-  line-height: 1.45;
+  line-height: 1.55;
+  // TODO: заменить Poppins на Century Gothic 
   font-family: "Poppins", "sans-serif";
 }
 
@@ -60,7 +61,7 @@ img {
   background-color: #0065ef;
   color: #fff;
 
-  @include media('<=1200px') {
+  @include media("<=1200px") {
     min-height: 50px;
   }
 }
@@ -79,7 +80,8 @@ img {
 
   background-color: transparent;
   transition: all 0.3s ease;
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: #e4efff;
   }
   &_active {
@@ -89,12 +91,47 @@ img {
 
 .ui-title {
   font-size: 52px;
-  @include media('<=991px') {
+  @include media("<=991px") {
     font-size: 32px;
   }
-  @include media('<=768px') {
+  @include media("<=768px") {
     font-size: 26px;
   }
+
+  &_2 {
+    font-size: 42px;
+    @include media("<=991px") {
+      font-size: 28px;
+    }
+    @include media("<=768px") {
+      font-size: 20px;
+    }
+  }
+
+  &_3 {
+    font-size: 32px;
+    @include media("<=991px") {
+      font-size: 24px;
+    }
+    @include media("<=768px") {
+      font-size: 14px;
+    }
+  }
+
+  &_6 {
+    font-size: 20px;
+    font-weight: 600;
+    @include media("<=991px") {
+      font-size: 18px;
+    }
+    @include media("<=768px") {
+      font-size: 16px;
+    }
+  }
+}
+
+.ui-text {
+  font-size: 1.8rem;
 }
 
 .container {
@@ -107,5 +144,23 @@ img {
   &_main {
     margin-top: 100px;
     margin-bottom: 100px;
+  }
+}
+
+.ui-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 50px;
+  &__item {
+  }
+  &__img {
+    width: 100%;
+  }
+  &__title {
+    margin: 10px 0;
+  }
+  &__description {
+
   }
 }
