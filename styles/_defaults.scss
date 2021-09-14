@@ -1,6 +1,7 @@
 html {
   font-size: 10px;
   line-height: 1.5rem;
+  overflow-x: hidden;
 }
 
 html,
@@ -58,7 +59,7 @@ img {
   padding-left: 20px;
   padding-right: 20px;
 
-  background-color: #0065ef;
+  background-color: $accent;
   color: #fff;
 
   @include media("<=1200px") {
@@ -122,16 +123,20 @@ img {
     font-size: 20px;
     font-weight: 600;
     @include media("<=991px") {
-      font-size: 18px;
+      font-size: 1.8rem;
     }
     @include media("<=768px") {
-      font-size: 16px;
+      font-size: 1.6rem;
     }
   }
 }
 
 .ui-text {
   font-size: 1.8rem;
+  color: $grey;
+  @include media("<=991px") {
+    font-size: 1.6rem;
+  }
 }
 
 .container {
@@ -152,7 +157,24 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 30px;
   row-gap: 50px;
+
+  @include media("<=768px") {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  @include media("<=576px") {
+    grid-template-columns: 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
   &__item {
+    &:hover {
+      color: $accent;
+      cursor: pointer;
+    }
   }
   &__img {
     width: 100%;
@@ -161,6 +183,6 @@ img {
     margin: 10px 0;
   }
   &__description {
-
+    color: $grey;
   }
 }

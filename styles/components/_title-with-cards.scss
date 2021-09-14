@@ -6,8 +6,15 @@
     grid-template-columns: 1fr 1.8fr;
     column-gap: 10%;
     margin-bottom: 50px;
+
+    @include media("<=991px") {
+      display: block;
+    }
   }
   &__title {
+    @include media("<=991px") {
+      margin-bottom: 10px;
+    }
   }
   &__text {
   }

@@ -1,6 +1,8 @@
 @import './reset';
+@import './vars';
 @import './mixins';
 @import './defaults';
 
 @import 'components/header';
 @import 'components/title-with-cards';
+@import 'components/copyright';
