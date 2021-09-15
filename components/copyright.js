@@ -15,7 +15,7 @@ export default function Copyright() {
           />
         </a>
 
-        <div className="copyright__rights">
+        <div className="ui-text copyright__rights">
           <strong>©2021 Galiley Enterprise</strong> — Все права защищены
         </div>
 

@@ -1,0 +1,21 @@
+.title-with-description {
+  &__wrapper {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  &__title {
+    margin-bottom: 40px;
+    max-width: 600px;
+  }
+  &__content {
+    max-width: 800px;
+  }
+  &__description {
+    
+  }
+  &__text {
+    &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+  }
+}
