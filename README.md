@@ -1,1 +1,5 @@
-donor: https://www.glofox.com/
+## donor: https://www.glofox.com/
+## todos:
+* Заменить шрифт
+* Сверстать
+* СДелать админку для новостей

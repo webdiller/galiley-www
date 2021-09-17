@@ -66,6 +66,9 @@ img {
   @include media("<=1200px") {
     min-height: 50px;
   }
+  @include media("<=768px") {
+    min-height: 45px;
+  }
 }
 
 .ui-item {
@@ -93,6 +96,7 @@ img {
 
 .ui-title {
   font-size: 52px;
+  font-weight: 700;
   @include media("<=991px") {
     font-size: 32px;
   }
@@ -150,6 +154,9 @@ img {
   &_main {
     margin-top: 100px;
     margin-bottom: 100px;
+    @include media("<=1200px") {
+      margin: 50px 0;
+    }
   }
 }
 
