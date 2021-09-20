@@ -1,5 +1,6 @@
 import React from "react";
 
+/** Права в футере */
 export default function Copyright() {
   return (
     <div className="copyright">

@@ -2,6 +2,7 @@ import Head from "next/head";
 import Copyright from "./copyright";
 import Header from "./header";
 
+/** Дефолтное расположение эементов */
 export default function DefaultLayout({
   title = "default title",
   description = "default description",

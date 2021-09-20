@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { useRef } from "react";
 import { AiOutlineMenu } from 'react-icons/ai';
 
+/** Шапка */
 export default function Header() {
   const router = useRouter();
   const refMenu = useRef(null);
