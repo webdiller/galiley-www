@@ -8,6 +8,22 @@ export default function Home() {
       <main className="main">
         <h1 className="container container_main ui-title">Главная</h1>
 
+        <div className="welcome">
+          <div className="container welcome__wrapper">
+            <div className="welcome__content">
+              <h1 className="welcome__title">Powering the future of fitness</h1>
+              <p className="welcome__subtitle">
+                Innovative fitness management software, helping growing businesses retain and scale
+                their brand and revenue.
+              </p>
+              <button className="welcome__btn">Our showcases</button>
+            </div>
+            <div className="welcome__media">
+              <img src="" alt="" className="welcome__img" />
+            </div>
+          </div>
+        </div>
+
         {/* BLOCK: Designed for fitness tailored to you */}
         <div className="title-with-cards">
           <div className="container title-with-cards__wrapper">
@@ -170,7 +186,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-          
         </div>
       </main>
     </DefaultLayout>
