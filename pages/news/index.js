@@ -5,6 +5,7 @@ export default function News() {
       <CustomHead />
       <div className="container container_main">
         <h1 className="ui-title">Новости и собития</h1>
+        
       </div>
     </div>
   );

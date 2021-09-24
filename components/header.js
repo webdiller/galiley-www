@@ -12,9 +12,11 @@ export default function Header() {
     <header className="header">
       <div className="container container_large header__wrapper">
         {/* logo */}
-        <a className="header__logo-link">
-          <img src="https://www.glofox.com/wp-content/uploads/2021/04/glofox-logo-black.svg" className="header__logo-img" alt="glofox-logo-black" loading="lazy" height="32" width="124" />
-        </a>
+        <Link href="/">
+          <a className="header__logo-link">
+            <img src="https://www.glofox.com/wp-content/uploads/2021/04/glofox-logo-black.svg" className="header__logo-img" alt="glofox-logo-black" loading="lazy" height="32" width="124" />
+          </a>
+        </Link>
 
         {/* nav */}
         <nav ref={refMenu} className="header__menu">

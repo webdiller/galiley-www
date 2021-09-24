@@ -6,20 +6,19 @@ export default function Home() {
   return (
     <DefaultLayout title="Главная">
       <main className="main">
-        <h1 className="container container_main ui-title">Главная</h1>
 
         <div className="welcome">
           <div className="container welcome__wrapper">
             <div className="welcome__content">
-              <h1 className="welcome__title">Powering the future of fitness</h1>
-              <p className="welcome__subtitle">
+              <h1 className="ui-title welcome__title">Powering the future of fitness</h1>
+              <p className="ui-text welcome__subtitle">
                 Innovative fitness management software, helping growing businesses retain and scale
                 their brand and revenue.
               </p>
-              <button className="welcome__btn">Our showcases</button>
+              <button className="ui-btn welcome__btn">Our showcases</button>
             </div>
             <div className="welcome__media">
-              <img src="" alt="" className="welcome__img" />
+              <img src="https://www.glofox.com/wp-content/uploads/2021/07/home-hero-image4.jpg" alt="" className="welcome__img" />
             </div>
           </div>
         </div>
@@ -162,26 +161,20 @@ export default function Home() {
         {/* BLOCK: Features */}
         <div className="features">
           <div className="container features__wrapper">
-            <p className="ui-title ui-title_2 features__title">Our features</p>
+            <p className="ui-title ui-title_2 features__title">Преимущества работы с нами</p>
             <div className="features__items">
               <div className="features__item">
                 <IoIosSpeedometer className="features__item-icon" />
-                <p className="ui-title ui-title_6 features__item-title">Speed</p>
+                <p className="ui-title ui-title_6 features__item-title">Скорость</p>
                 <p className="ui-text features__item-text">
-                  With the changing landscape of the fitness industry, especially in the last few
-                  months, it’s important to reflect on your retention strategy. As many brands have
-                  pivoted to a hybrid fitness business, your retention strategy needs to encompass
-                  this move in a way that allows you to deliver excellent customer service and
-                  member experience online and offline.
+                  Мы работаем, используя передовые подходы к разработке, что позволяет в кратчайшие сроки (2-4 недели) запустить ваш продукт.
                 </p>
               </div>
               <div className="features__item">
                 <MdHighQuality className="features__item-icon" />
-                <p className="ui-title ui-title_6 features__item-title">Hight quality</p>
+                <p className="ui-title ui-title_6 features__item-title">Качество</p>
                 <p className="ui-text features__item-text">
-                  With the changing landscape of the fitness industry, especially in the last few
-                  months, it’s important to reflect on your retention strategy. As many brands have
-                  pivoted to a hybrid fitness business.
+                  Наши специалисты находятся на рубеже информационных технологий и постоянно оттачивают свои навыки, чтобы всегда предоставлять решения, соответствующие современным требованиям качества
                 </p>
               </div>
             </div>

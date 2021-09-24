@@ -11,7 +11,7 @@ input::placeholder,
 textarea,
 textarea::placeholder,
 button {
-  font-family: "Poppins", "sans-serif";
+  font-family: "CenturyGothic", "sans-serif";
 }
 
 p,
@@ -28,10 +28,9 @@ textarea,
 textarea::placeholder,
 button,
 span, div {
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 1.55;
-  // TODO: заменить Poppins на Century Gothic
-  font-family: "Poppins", "sans-serif";
+  font-family: "CenturyGothic", "sans-serif";
 }
 
 a,
@@ -61,6 +60,7 @@ img {
   padding-right: 20px;
 
   background-color: $accent;
+  background-image: linear-gradient(to right top, #0065ef, #0c6df3, #1874f6, #227cf9, #2c83fc, #3388fd, #3b8dfe, #4292ff, #4996ff, #4f99ff, #559dff, #5ba0ff);
   color: #fff;
 
   @include media("<=1200px") {
@@ -134,7 +134,7 @@ img {
       font-size: 28px;
     }
     @include media("<=768px") {
-      font-size: 20px;
+      font-size: 24px;
     }
   }
 
@@ -155,16 +155,16 @@ img {
       font-size: 1.8rem;
     }
     @include media("<=768px") {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
   }
 }
 
 .ui-text {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: $grey;
   @include media("<=991px") {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 
