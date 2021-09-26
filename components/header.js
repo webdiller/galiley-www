@@ -41,7 +41,7 @@ export default function Header() {
         </nav>
 
         <button onClick={()=>refMenu.current.classList.toggle('active')} className="header__bar"><AiOutlineMenu/></button>
-        <button className="ui-btn header__btn">Портфолио</button>
+        <button className="ui-btn ui-btn_animated header__btn">Портфолио</button>
       </div>
     </header>
   );

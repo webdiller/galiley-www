@@ -1,11 +1,11 @@
 import CustomHead from "@/components/customHead";
+import DefaultLayout from "@/components/defaultLayout";
 export default function About() {
   return (
-    <div>
-      <CustomHead />
-      <div className="container container_main">
-        <h1 className="ui-title">О нас</h1>
-      </div>
-    </div>
+    <DefaultLayout title="О нас">
+      <main>
+        <h1 className="container container_main ui-title">О нас</h1>
+      </main>
+    </DefaultLayout>
   );
 }

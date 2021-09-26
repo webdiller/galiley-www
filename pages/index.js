@@ -5,7 +5,7 @@ import { MdHighQuality } from "react-icons/md";
 export default function Home() {
   return (
     <DefaultLayout title="Главная">
-      <main className="main">
+      <main>
 
         <div className="welcome">
           <div className="container welcome__wrapper">
@@ -15,7 +15,7 @@ export default function Home() {
                 Innovative fitness management software, helping growing businesses retain and scale
                 their brand and revenue.
               </p>
-              <button className="ui-btn welcome__btn">Our showcases</button>
+              <button className="ui-btn ui-btn_animated welcome__btn">Our showcases</button>
             </div>
             <div className="welcome__media">
               <img src="https://www.glofox.com/wp-content/uploads/2021/07/home-hero-image4.jpg" alt="" className="welcome__img" />
