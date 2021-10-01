@@ -1,12 +1,12 @@
 import DefaultLayout from "@/components/defaultLayout";
 import { IoIosSpeedometer } from "react-icons/io";
 import { MdHighQuality } from "react-icons/md";
+import { HiCheckCircle } from "react-icons/hi";
 
 export default function Home() {
   return (
     <DefaultLayout title="Главная">
       <main>
-
         <div className="welcome">
           <div className="container welcome__wrapper">
             <div className="welcome__content">
@@ -18,7 +18,11 @@ export default function Home() {
               <button className="ui-btn ui-btn_animated welcome__btn">Our showcases</button>
             </div>
             <div className="welcome__media">
-              <img src="https://www.glofox.com/wp-content/uploads/2021/07/home-hero-image4.jpg" alt="" className="welcome__img" />
+              <img
+                src="https://www.glofox.com/wp-content/uploads/2021/07/home-hero-image4.jpg"
+                alt=""
+                className="welcome__img"
+              />
             </div>
           </div>
         </div>
@@ -167,15 +171,68 @@ export default function Home() {
                 <IoIosSpeedometer className="features__item-icon" />
                 <p className="ui-title ui-title_6 features__item-title">Скорость</p>
                 <p className="ui-text features__item-text">
-                  Мы работаем, используя передовые подходы к разработке, что позволяет в кратчайшие сроки (2-4 недели) запустить ваш продукт.
+                  Мы работаем, используя передовые подходы к разработке, что позволяет в кратчайшие
+                  сроки (2-4 недели) запустить ваш продукт.
                 </p>
               </div>
+
               <div className="features__item">
                 <MdHighQuality className="features__item-icon" />
                 <p className="ui-title ui-title_6 features__item-title">Качество</p>
                 <p className="ui-text features__item-text">
-                  Наши специалисты находятся на рубеже информационных технологий и постоянно оттачивают свои навыки, чтобы всегда предоставлять решения, соответствующие современным требованиям качества
+                  Наши специалисты находятся на рубеже информационных технологий и постоянно
+                  оттачивают свои навыки, чтобы всегда предоставлять решения, соответствующие
+                  современным требованиям качества
                 </p>
+              </div>
+
+              <div className="features__item">
+                <MdHighQuality className="features__item-icon" />
+                <p className="ui-title ui-title_6 features__item-title">Опыт</p>
+                <p className="ui-text features__item-text">
+                  Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                  тексты. Он толку обеспечивает свое букв страна знаках! Раз заманивший домах вдали
+                  путь рот журчит сбить.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* BLOCK: About us */}
+        <div className="about">
+          <div className="container about__wrapper">
+            <p className="ui-title ui-title_2 about__title">О нас</p>
+            <div className="about__content">
+              <div className="about__left">
+                <p className="ui-title ui-title_3 about__subtitle">Brand & marketing tools</p>
+                <p className="ui-text about__text">
+                  Amplify your brand, engage with your customer base and generate more revenue with
+                  our selection of effective and easy-to-use brand and marketing tools.
+                </p>
+
+                <div className="ui-list about__list">
+                  <p className="ui-list__title">Explore Marketing Tools</p>
+                  <ul className="ui-list__items">
+                    <li className="ui-list__item">
+                      <HiCheckCircle className="ui-list__icon" /> Lead capture & social integrations
+                    </li>
+                    <li className="ui-list__item">
+                      <HiCheckCircle className="ui-list__icon" /> Automated messaging & push
+                      notifications
+                    </li>
+                    <li className="ui-list__item">
+                      <HiCheckCircle className="ui-list__icon" /> Custom mobile member experience
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="about__media">
+                <img
+                  src="https://www.glofox.com/wp-content/uploads/2021/07/home-hero-image4.jpg"
+                  alt=""
+                  className="about__img"
+                />
               </div>
             </div>
           </div>

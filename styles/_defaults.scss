@@ -27,7 +27,8 @@ input::placeholder,
 textarea,
 textarea::placeholder,
 button,
-span, div {
+span,
+div {
   font-size: 2rem;
   line-height: 1.55;
   font-family: "CenturyGothic", "sans-serif";
@@ -60,7 +61,21 @@ img {
   padding-right: 20px;
 
   background-color: $accent;
-  background-image: linear-gradient(to right top, #0065ef, #0c6df3, #1874f6, #227cf9, #2c83fc, #3388fd, #3b8dfe, #4292ff, #4996ff, #4f99ff, #559dff, #5ba0ff);
+  background-image: linear-gradient(
+    to right top,
+    #0065ef,
+    #0c6df3,
+    #1874f6,
+    #227cf9,
+    #2c83fc,
+    #3388fd,
+    #3b8dfe,
+    #4292ff,
+    #4996ff,
+    #4f99ff,
+    #559dff,
+    #5ba0ff
+  );
   color: #fff;
 
   @include media("<=1200px") {
@@ -71,11 +86,25 @@ img {
   }
   &_animated {
     background-size: 200% auto;
-    background-image: linear-gradient(to right top, #0065ef, #0c6df3, #1874f6, #227cf9, #2c83fc, #3388fd, #3b8dfe, #4292ff, #4996ff, #4f99ff, #559dff, #5ba0ff);
+    background-image: linear-gradient(
+      to right top,
+      #0065ef,
+      #0c6df3,
+      #1874f6,
+      #227cf9,
+      #2c83fc,
+      #3388fd,
+      #3b8dfe,
+      #4292ff,
+      #4996ff,
+      #4f99ff,
+      #559dff,
+      #5ba0ff
+    );
     transition: 0.5s;
     &:hover {
       background-position: right center;
-    } 
+    }
   }
 }
 
@@ -152,7 +181,7 @@ img {
       font-size: 24px;
     }
     @include media("<=768px") {
-      font-size: 14px;
+      font-size: 18px;
     }
   }
 
@@ -242,5 +271,33 @@ img {
     -webkit-box-orient: vertical;
     overflow: hidden;
     word-break: break-word;
+  }
+}
+
+.ui-list {
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  &__icon {
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    vertical-align: middle;
+    color: rgb(55, 170, 85);
   }
 }
