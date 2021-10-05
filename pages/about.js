@@ -1,4 +1,3 @@
-import CustomHead from "@/components/customHead";
 import DefaultLayout from "@/components/defaultLayout";
 export default function About() {
   return (

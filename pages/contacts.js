@@ -1,4 +1,3 @@
-import CustomHead from "@/components/customHead";
 import DefaultLayout from "@/components/defaultLayout";
 import { HiCheckCircle } from "react-icons/hi";
 export default function Contacts() {

@@ -5,5 +5,4 @@ module.exports = {
     imageSizes: [16, 32, 48, 64, 96],
     domains: ['localhost']
   },
-  optimizeFonts: false,
 }

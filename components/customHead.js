@@ -9,7 +9,7 @@ export default function CustomHead({ title = "default title", description = "def
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       </Head>
       <Header />
     </>
