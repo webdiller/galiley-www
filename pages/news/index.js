@@ -1,5 +1,6 @@
 import DefaultLayout from "@/components/defaultLayout";
 import Link from "next/link";
+import Image from 'next/image'
 export default function News({data}) {
 
   const api = process.env.NEXT_PUBLIC_LOCAL_API
@@ -28,10 +29,18 @@ export default function News({data}) {
               {data.map(({ id, title, content, slug, image }) => 
                 <Link key={id} href={`/news/${slug}`}>
                   <div className="ui-cards__item">
-                  <img 
+                  {/* <img 
                     src={`${api}${image.formats.medium.url}`}
                     alt={`${api}${image.formats.medium.name}`}
                     className="ui-cards__img"
+                  /> */}
+                  <Image
+                  width={400}
+                  height={400}
+                  src={`${api}${image.formats.medium.url}`}
+                  alt={`${api}${image.formats.medium.name}`}
+                  className="ui-cards__img"
+                  // src="/img2.webp"
                   />
                   <p className="ui-title ui-title_6 ui-cards__title">{title}</p>
                   <p className="ui-cards__description">{content}</p>

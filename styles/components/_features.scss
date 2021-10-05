@@ -4,6 +4,9 @@
   &__title {
     margin-bottom: 40px;
   }
+  &__description {
+    margin-bottom: 50px;
+  }
   &__items {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(auto, 400px));
