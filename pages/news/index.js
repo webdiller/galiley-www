@@ -39,6 +39,7 @@ export default function News({ data }) {
                       src={`${api}${image.formats.medium.url}`}
                       alt={`${api}${image.formats.medium.name}`}
                       className="ui-cards__img"
+                      // src="/img2.webp"
                     />
                     <p className="ui-title ui-title_6 ui-cards__title">{title}</p>
                     <p className="ui-cards__description">{content}</p>
