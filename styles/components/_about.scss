@@ -40,9 +40,6 @@
     }
   }
   &__media {
-    div {
-      border-radius: 10px;
-    }
     @include media("<=768px") {
       display: block;
       margin: 0 auto;
@@ -50,5 +47,6 @@
     }
   }
   &__img {
+    border-radius: 10px;
   }
 }

@@ -2,7 +2,6 @@ import DefaultLayout from "@/components/defaultLayout";
 import { IoIosSpeedometer } from "react-icons/io";
 import { MdHighQuality } from "react-icons/md";
 import { HiCheckCircle } from "react-icons/hi";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -19,15 +18,7 @@ export default function Home() {
               <button className="ui-btn ui-btn_animated welcome__btn">Our showcases</button>
             </div>
             <div className="welcome__media">
-              <Image
-                src="/image-placeholder.jpg"
-                alt=""
-                className="welcome__img"
-                objectFit="cover"
-                layout="intrinsic"
-                width={800}
-                height={800}
-              />
+              <img src="/image-placeholder.jpg" alt="image-placeholder" className="welcome__img" />
             </div>
           </div>
         </div>
@@ -49,15 +40,7 @@ export default function Home() {
 
             <div className="ui-cards title-with-cards__cards">
               <div className="ui-cards__item">
-                <Image
-                  src="/image-placeholder.jpg"
-                  alt=""
-                  className="ui-cards__img"
-                  objectFit="cover"
-                  layout="intrinsic"
-                  width={450}
-                  height={300}
-                />
+                <img src="/image-placeholder.jpg" alt="image-placeholder" className="ui-cards__img" />
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -66,15 +49,8 @@ export default function Home() {
               </div>
 
               <div className="ui-cards__item">
-                <Image
-                  src="/image-placeholder.jpg"
-                  alt=""
-                  className="ui-cards__img"
-                  objectFit="cover"
-                  layout="intrinsic"
-                  width={450}
-                  height={300}
-                />
+                
+                <img src="/image-placeholder.jpg" alt="image-placeholder" className="ui-cards__img" />
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -83,15 +59,7 @@ export default function Home() {
               </div>
 
               <div className="ui-cards__item">
-                <Image
-                  src="/image-placeholder.jpg"
-                  alt=""
-                  className="ui-cards__img"
-                  objectFit="cover"
-                  layout="intrinsic"
-                  width={450}
-                  height={300}
-                />
+                <img src="/image-placeholder.jpg" alt="image-placeholder" className="ui-cards__img" />
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -100,15 +68,7 @@ export default function Home() {
               </div>
 
               <div className="ui-cards__item">
-                <Image
-                  src="/image-placeholder.jpg"
-                  alt=""
-                  className="ui-cards__img"
-                  objectFit="cover"
-                  layout="intrinsic"
-                  width={450}
-                  height={300}
-                />
+                <img src="/image-placeholder.jpg" alt="image-placeholder" className="ui-cards__img" />
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -117,15 +77,8 @@ export default function Home() {
               </div>
 
               <div className="ui-cards__item">
-                <Image
-                  src="/image-placeholder.jpg"
-                  alt=""
-                  className="ui-cards__img"
-                  objectFit="cover"
-                  layout="intrinsic"
-                  width={450}
-                  height={300}
-                />
+                
+                <img src="/image-placeholder.jpg" alt="image-placeholder" className="ui-cards__img" />
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -134,15 +87,8 @@ export default function Home() {
               </div>
 
               <div className="ui-cards__item">
-                <Image
-                  src="/image-placeholder.jpg"
-                  alt=""
-                  className="ui-cards__img"
-                  objectFit="cover"
-                  layout="intrinsic"
-                  width={450}
-                  height={300}
-                />
+                
+                <img src="/image-placeholder.jpg" alt="image-placeholder" className="ui-cards__img" />
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -182,15 +128,7 @@ export default function Home() {
               </div>
             </div>
             <div className="title-with-description__media">
-              <Image
-                src="/image-placeholder.jpg"
-                alt=""
-                className="title-with-description__img"
-                objectFit="cover"
-                layout="intrinsic"
-                width={450}
-                height={300}
-              />
+              <img src="/image-placeholder.jpg" alt="image-placeholder" className="title-with-description__img" />
             </div>
           </div>
         </div>
@@ -262,15 +200,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="about__media">
-                <Image
-                  src="/image-placeholder.jpg"
-                  alt=""
-                  className="about__img"
-                  objectFit="cover"
-                  layout="intrinsic"
-                  width={450}
-                  height={300}
-                />
+              <img src="/image-placeholder.jpg" alt="image-placeholder" className="about__img" />
               </div>
             </div>
           </div>

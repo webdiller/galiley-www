@@ -38,13 +38,13 @@
     }
   }
   &__media {
-    div {
-      border-radius: 10px;
-    }
     @include media("<=768px") {
       display: block;
       margin: 0 auto;
       max-width: 70%;
     }
+  }
+  &__img {
+    border-radius: 10px;
   }
 }

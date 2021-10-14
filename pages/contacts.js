@@ -1,6 +1,5 @@
 import DefaultLayout from "@/components/defaultLayout";
 import { HiCheckCircle } from "react-icons/hi";
-import Image from "next/image";
 
 export default function Contacts() {
   return (
@@ -47,15 +46,7 @@ export default function Contacts() {
                 </div>
               </div>
               <div className="about__media">
-                <Image
-                  src="/image-placeholder.jpg"
-                  alt=""
-                  className="about__img"
-                  objectFit="cover"
-                  layout="intrinsic"
-                  width={450}
-                  height={300}
-                />
+                <img src="/image-placeholder.jpg" alt="image-placeholder" className="about__img" />
               </div>
             </div>
           </div>

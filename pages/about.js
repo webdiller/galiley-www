@@ -1,5 +1,4 @@
 import DefaultLayout from "@/components/defaultLayout";
-import Image from "next/image";
 
 export default function About() {
   return (
@@ -39,14 +38,10 @@ export default function About() {
               </div>
             </div>
             <div className="title-with-description__media">
-              <Image
+              <img
                 src="/image-placeholder.jpg"
-                alt=""
+                alt="mage-placeholder"
                 className="title-with-description__img"
-                objectFit="cover"
-                layout="intrinsic"
-                width={450}
-                height={300}
               />
             </div>
           </div>
