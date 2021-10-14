@@ -7,6 +7,7 @@ export default function News({ article }) {
       <main>
         <h1 className="container container_main ui-title">{article.title}</h1>
         <div className="container content">
+          {/* TODO: Настроить в страпи преобразование конента */}
           <p>{article.content}</p>
         </div>
       </main>
@@ -15,10 +16,10 @@ export default function News({ article }) {
 }
 
 export const getStaticPaths = async () => {
-  const res = await fetch('http://localhost:1337/articles');
+  const res = await fetch("http://localhost:1337/articles");
   const articles = await res.json();
   // const paths = articles.map(article => `/news/${article.slug}`);
-  const paths = articles.map(article => ({params: { slug: article.slug.toString() }}));
+  const paths = articles.map(article => ({ params: { slug: article.slug.toString() } }));
   return {
     paths,
     fallback: false

@@ -2,6 +2,7 @@ import DefaultLayout from "@/components/defaultLayout";
 import { IoIosSpeedometer } from "react-icons/io";
 import { MdHighQuality } from "react-icons/md";
 import { HiCheckCircle } from "react-icons/hi";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -18,10 +19,14 @@ export default function Home() {
               <button className="ui-btn ui-btn_animated welcome__btn">Our showcases</button>
             </div>
             <div className="welcome__media">
-              <img
-                src="https://www.glofox.com/wp-content/uploads/2021/07/home-hero-image4.jpg"
+              <Image
+                src="/image-placeholder.jpg"
                 alt=""
                 className="welcome__img"
+                objectFit="cover"
+                layout="intrinsic"
+                width={800}
+                height={800}
               />
             </div>
           </div>
@@ -35,7 +40,7 @@ export default function Home() {
                 Designed for fitness tailored to you
               </h2>
               <p className="title-with-cards__text ui-text">
-                Developed by fitness entrepreneurs for fitness entrepreneurs, we've built
+                Developed by fitness entrepreneurs for fitness entrepreneurs, we have built
                 best-in-class management software to cater to the specific needs of fitness
                 businesses. Whether you own one location or one thousand, we offer a selection of
                 plans and innovative tools to suit your needs.
@@ -44,10 +49,14 @@ export default function Home() {
 
             <div className="ui-cards title-with-cards__cards">
               <div className="ui-cards__item">
-                <img
-                  src="https://images.pexels.com/photos/2329440/pexels-photo-2329440.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                <Image
+                  src="/image-placeholder.jpg"
                   alt=""
                   className="ui-cards__img"
+                  objectFit="cover"
+                  layout="intrinsic"
+                  width={450}
+                  height={300}
                 />
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
@@ -57,10 +66,14 @@ export default function Home() {
               </div>
 
               <div className="ui-cards__item">
-                <img
-                  src="https://images.pexels.com/photos/4916705/pexels-photo-4916705.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                <Image
+                  src="/image-placeholder.jpg"
                   alt=""
                   className="ui-cards__img"
+                  objectFit="cover"
+                  layout="intrinsic"
+                  width={450}
+                  height={300}
                 />
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
@@ -70,10 +83,14 @@ export default function Home() {
               </div>
 
               <div className="ui-cards__item">
-                <img
-                  src="https://images.pexels.com/photos/6373667/pexels-photo-6373667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                <Image
+                  src="/image-placeholder.jpg"
                   alt=""
                   className="ui-cards__img"
+                  objectFit="cover"
+                  layout="intrinsic"
+                  width={450}
+                  height={300}
                 />
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
@@ -83,10 +100,14 @@ export default function Home() {
               </div>
 
               <div className="ui-cards__item">
-                <img
-                  src="https://images.pexels.com/photos/6373405/pexels-photo-6373405.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                <Image
+                  src="/image-placeholder.jpg"
                   alt=""
                   className="ui-cards__img"
+                  objectFit="cover"
+                  layout="intrinsic"
+                  width={450}
+                  height={300}
                 />
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
@@ -96,10 +117,14 @@ export default function Home() {
               </div>
 
               <div className="ui-cards__item">
-                <img
-                  src="https://images.pexels.com/photos/7034591/pexels-photo-7034591.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                <Image
+                  src="/image-placeholder.jpg"
                   alt=""
                   className="ui-cards__img"
+                  objectFit="cover"
+                  layout="intrinsic"
+                  width={450}
+                  height={300}
                 />
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
@@ -109,10 +134,14 @@ export default function Home() {
               </div>
 
               <div className="ui-cards__item">
-                <img
-                  src="https://images.pexels.com/photos/2329440/pexels-photo-2329440.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                <Image
+                  src="/image-placeholder.jpg"
                   alt=""
                   className="ui-cards__img"
+                  objectFit="cover"
+                  layout="intrinsic"
+                  width={450}
+                  height={300}
                 />
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
@@ -153,10 +182,14 @@ export default function Home() {
               </div>
             </div>
             <div className="title-with-description__media">
-              <img
-                className="title-with-description__img"
-                src="https://www.glofox.com/wp-content/uploads/2021/07/home-hero-image4.jpg"
+              <Image
+                src="/image-placeholder.jpg"
                 alt=""
+                className="title-with-description__img"
+                objectFit="cover"
+                layout="intrinsic"
+                width={450}
+                height={300}
               />
             </div>
           </div>
@@ -205,7 +238,7 @@ export default function Home() {
             <p className="ui-title ui-title_2 about__title">О нас</p>
             <div className="about__content">
               <div className="about__left">
-                <p className="ui-title ui-title_3 about__subtitle">Brand & marketing tools</p>
+                <p className="ui-title ui-title_3 about__subtitle">Brand and marketing tools</p>
                 <p className="ui-text about__text">
                   Amplify your brand, engage with your customer base and generate more revenue with
                   our selection of effective and easy-to-use brand and marketing tools.
@@ -215,10 +248,11 @@ export default function Home() {
                   <p className="ui-list__title">Explore Marketing Tools</p>
                   <ul className="ui-list__items">
                     <li className="ui-list__item">
-                      <HiCheckCircle className="ui-list__icon" /> Lead capture & social integrations
+                      <HiCheckCircle className="ui-list__icon" /> Lead capture and social
+                      integrations
                     </li>
                     <li className="ui-list__item">
-                      <HiCheckCircle className="ui-list__icon" /> Automated messaging & push
+                      <HiCheckCircle className="ui-list__icon" /> Automated messaging and push
                       notifications
                     </li>
                     <li className="ui-list__item">
@@ -228,10 +262,14 @@ export default function Home() {
                 </div>
               </div>
               <div className="about__media">
-                <img
-                  src="https://www.glofox.com/wp-content/uploads/2021/07/home-hero-image4.jpg"
+                <Image
+                  src="/image-placeholder.jpg"
                   alt=""
                   className="about__img"
+                  objectFit="cover"
+                  layout="intrinsic"
+                  width={450}
+                  height={300}
                 />
               </div>
             </div>

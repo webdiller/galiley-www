@@ -1,4 +1,6 @@
 import DefaultLayout from "@/components/defaultLayout";
+import Image from "next/image";
+
 export default function About() {
   return (
     <DefaultLayout title="О нас">
@@ -37,10 +39,14 @@ export default function About() {
               </div>
             </div>
             <div className="title-with-description__media">
-              <img
-                className="title-with-description__img"
-                src="https://www.glofox.com/wp-content/uploads/2021/07/home-hero-image4.jpg"
+              <Image
+                src="/image-placeholder.jpg"
                 alt=""
+                className="title-with-description__img"
+                objectFit="cover"
+                layout="intrinsic"
+                width={450}
+                height={300}
               />
             </div>
           </div>

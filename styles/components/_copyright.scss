@@ -12,8 +12,28 @@
     }
   }
   &__logo-link {
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: auto;
+    color: #000;
+    text-transform: uppercase;
     @include media('<=991px') {
       margin-bottom: 20px;
+    }
+  }
+  &__logo-title-lg {
+    display: inline-block;
+    font-size: 3rem;
+    @include media("<=768px") {
+      display: none;
+    }
+  }
+
+  &__logo-title-sm {
+    display: none;
+    font-size: 2rem;
+    @include media("<=768px") {
+      display: inline-block;
     }
   }
   &__logo-img {

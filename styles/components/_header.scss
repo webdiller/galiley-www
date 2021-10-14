@@ -5,18 +5,39 @@
     align-items: center;
     margin-top: 30px;
   }
+
   &__logo-link {
+    font-weight: 600;
+    text-decoration: none;
     margin-right: auto;
+    color: #000;
+    text-transform: uppercase;
     @include media("<=1200px") {
       order: 1;
     }
   }
+
+  &__logo-title-lg {
+    display: inline-block;
+    font-size: 3rem;
+    @include media("<=768px") {
+      display: none;
+    }
+  }
+
+  &__logo-title-sm {
+    display: none;
+    font-size: 2rem;
+    @include media("<=768px") {
+      display: inline-block;
+    }
+  }
+
   &__logo-img {
   }
   &__menu {
     display: flex;
     align-items: center;
-    margin-right: auto;
     @include media("<=1200px") {
       position: absolute;
       top: -30px;
@@ -26,7 +47,7 @@
 
       flex-direction: column;
       width: -webkit-fill-available;
-      height: 300px;
+      height: auto;
       padding: 30px;
       margin-right: 0;
       padding-left: 0;

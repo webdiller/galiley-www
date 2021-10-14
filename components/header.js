@@ -14,7 +14,12 @@ export default function Header() {
         {/* logo */}
         <Link href="/">
           <a className="header__logo-link">
-            <img src="https://www.glofox.com/wp-content/uploads/2021/04/glofox-logo-black.svg" className="header__logo-img" alt="glofox-logo-black" loading="lazy" height="32" width="124" />
+
+            {/* TODO: Создать логотип и вставить в нативный Image или вывести svg */}
+            {/* <img src="https://www.glofox.com/wp-content/uploads/2021/04/glofox-logo-black.svg" className="header__logo-img" alt="glofox-logo-black" loading="lazy" height="32" width="124" /> */}
+            
+            <span className="header__logo-title-lg">Galiley Enterprise</span>
+            <span className="header__logo-title-sm">Galiley Enterprise</span>
           </a>
         </Link>
 
@@ -41,7 +46,9 @@ export default function Header() {
         </nav>
 
         <button onClick={()=>refMenu.current.classList.toggle('active')} className="header__bar"><AiOutlineMenu/></button>
-        <button className="ui-btn ui-btn_animated header__btn">Портфолио</button>
+
+        {/* TODO: Когда будет портфолио работ, отобразить эту кнопку */}
+        {/* <button className="ui-btn ui-btn_animated header__btn">Портфолио</button> */}
       </div>
     </header>
   );

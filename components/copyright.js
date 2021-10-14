@@ -6,14 +6,18 @@ export default function Copyright() {
     <div className="copyright">
       <div className="container copyright__wrapper">
         <a className="copyright__logo-link">
-          <img
+
+          {/* TODO: Создать логотип и вставить в нативный Image или вывести svg */}
+          {/* <img
             src="https://www.glofox.com/wp-content/uploads/2021/04/glofox-logo-black.svg"
             className="copyright__logo-img"
             alt="glofox-logo-black"
             loading="lazy"
             height="32"
             width="124"
-          />
+          /> */}
+          <span className="copyright__logo-title-lg">Galiley Enterprise</span>
+          <span className="copyright__logo-title-sm">Galiley Enterprise</span>
         </a>
 
         <div className="ui-text copyright__rights">
