@@ -18,7 +18,7 @@ export default function Home() {
               <button className="ui-btn ui-btn_animated welcome__btn">Our showcases</button>
             </div>
             <div className="welcome__media">
-              <img src="/image-placeholder.jpg" alt="image-placeholder" className="welcome__img" />
+              <img  src="/image-placeholder.jpg" alt="image-placeholder" className="welcome__img" />
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function Home() {
 
             <div className="ui-cards title-with-cards__cards">
               <div className="ui-cards__item">
-                <img src="/image-placeholder.jpg" alt="image-placeholder" className="ui-cards__img" />
+                <img  src="/image-placeholder.jpg" alt="image-placeholder" className="ui-cards__img" />
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -50,7 +50,7 @@ export default function Home() {
 
               <div className="ui-cards__item">
                 
-                <img src="/image-placeholder.jpg" alt="image-placeholder" className="ui-cards__img" />
+                <img  src="/image-placeholder.jpg" alt="image-placeholder" className="ui-cards__img" />
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -59,7 +59,7 @@ export default function Home() {
               </div>
 
               <div className="ui-cards__item">
-                <img src="/image-placeholder.jpg" alt="image-placeholder" className="ui-cards__img" />
+                <img  src="/image-placeholder.jpg" alt="image-placeholder" className="ui-cards__img" />
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -68,17 +68,7 @@ export default function Home() {
               </div>
 
               <div className="ui-cards__item">
-                <img src="/image-placeholder.jpg" alt="image-placeholder" className="ui-cards__img" />
-                <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
-                <p className="ui-cards__description">
-                  Manage your studio and boost your brand with our powerful fitness management
-                  software.
-                </p>
-              </div>
-
-              <div className="ui-cards__item">
-                
-                <img src="/image-placeholder.jpg" alt="image-placeholder" className="ui-cards__img" />
+                <img  src="/image-placeholder.jpg" alt="image-placeholder" className="ui-cards__img" />
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -88,7 +78,17 @@ export default function Home() {
 
               <div className="ui-cards__item">
                 
-                <img src="/image-placeholder.jpg" alt="image-placeholder" className="ui-cards__img" />
+                <img  src="/image-placeholder.jpg" alt="image-placeholder" className="ui-cards__img" />
+                <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
+                <p className="ui-cards__description">
+                  Manage your studio and boost your brand with our powerful fitness management
+                  software.
+                </p>
+              </div>
+
+              <div className="ui-cards__item">
+                
+                <img  src="/image-placeholder.jpg" alt="image-placeholder" className="ui-cards__img" />
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -128,7 +128,7 @@ export default function Home() {
               </div>
             </div>
             <div className="title-with-description__media">
-              <img src="/image-placeholder.jpg" alt="image-placeholder" className="title-with-description__img" />
+              <img  src="/image-placeholder.jpg" alt="image-placeholder" className="title-with-description__img" />
             </div>
           </div>
         </div>
@@ -200,7 +200,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="about__media">
-              <img src="/image-placeholder.jpg" alt="image-placeholder" className="about__img" />
+              <img  src="/image-placeholder.jpg" alt="image-placeholder" className="about__img" />
               </div>
             </div>
           </div>

@@ -46,7 +46,7 @@ export default function Contacts() {
                 </div>
               </div>
               <div className="about__media">
-                <img src="/image-placeholder.jpg" alt="image-placeholder" className="about__img" />
+                <img  src="/image-placeholder.jpg" alt="image-placeholder" className="about__img" />
               </div>
             </div>
           </div>
