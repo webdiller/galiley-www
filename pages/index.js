@@ -19,7 +19,8 @@ export default function Home() {
               <button className="ui-btn ui-btn_animated welcome__btn">Our showcases</button>
             </div>
             <div className="welcome__media">
-              <Image
+              <img src="/image-placeholder.jpg" alt="image-placeholder" className="welcome__img" />
+              {/* <Image
                 src="/image-placeholder.jpg"
                 alt=""
                 className="welcome__img"
@@ -27,7 +28,7 @@ export default function Home() {
                 layout="intrinsic"
                 width={800}
                 height={800}
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -49,7 +50,12 @@ export default function Home() {
 
             <div className="ui-cards title-with-cards__cards">
               <div className="ui-cards__item">
-                <Image
+                <img
+                  src="/image-placeholder.jpg"
+                  alt="image-placeholder"
+                  className="welcome__img"
+                />
+                {/* <Image
                   src="/image-placeholder.jpg"
                   alt=""
                   className="ui-cards__img"
@@ -57,7 +63,7 @@ export default function Home() {
                   layout="intrinsic"
                   width={450}
                   height={300}
-                />
+                /> */}
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -66,7 +72,12 @@ export default function Home() {
               </div>
 
               <div className="ui-cards__item">
-                <Image
+                <img
+                  src="/image-placeholder.jpg"
+                  alt="image-placeholder"
+                  className="welcome__img"
+                />
+                {/* <Image
                   src="/image-placeholder.jpg"
                   alt=""
                   className="ui-cards__img"
@@ -74,7 +85,7 @@ export default function Home() {
                   layout="intrinsic"
                   width={450}
                   height={300}
-                />
+                /> */}
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -83,7 +94,12 @@ export default function Home() {
               </div>
 
               <div className="ui-cards__item">
-                <Image
+                <img
+                  src="/image-placeholder.jpg"
+                  alt="image-placeholder"
+                  className="welcome__img"
+                />
+                {/* <Image
                   src="/image-placeholder.jpg"
                   alt=""
                   className="ui-cards__img"
@@ -91,7 +107,7 @@ export default function Home() {
                   layout="intrinsic"
                   width={450}
                   height={300}
-                />
+                /> */}
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -100,7 +116,12 @@ export default function Home() {
               </div>
 
               <div className="ui-cards__item">
-                <Image
+                <img
+                  src="/image-placeholder.jpg"
+                  alt="image-placeholder"
+                  className="welcome__img"
+                />
+                {/* <Image
                   src="/image-placeholder.jpg"
                   alt=""
                   className="ui-cards__img"
@@ -108,7 +129,7 @@ export default function Home() {
                   layout="intrinsic"
                   width={450}
                   height={300}
-                />
+                /> */}
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -117,7 +138,12 @@ export default function Home() {
               </div>
 
               <div className="ui-cards__item">
-                <Image
+                <img
+                  src="/image-placeholder.jpg"
+                  alt="image-placeholder"
+                  className="welcome__img"
+                />
+                {/* <Image
                   src="/image-placeholder.jpg"
                   alt=""
                   className="ui-cards__img"
@@ -125,7 +151,7 @@ export default function Home() {
                   layout="intrinsic"
                   width={450}
                   height={300}
-                />
+                /> */}
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -134,7 +160,12 @@ export default function Home() {
               </div>
 
               <div className="ui-cards__item">
-                <Image
+                <img
+                  src="/image-placeholder.jpg"
+                  alt="image-placeholder"
+                  className="welcome__img"
+                />
+                {/* <Image
                   src="/image-placeholder.jpg"
                   alt=""
                   className="ui-cards__img"
@@ -142,7 +173,7 @@ export default function Home() {
                   layout="intrinsic"
                   width={450}
                   height={300}
-                />
+                /> */}
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -182,7 +213,7 @@ export default function Home() {
               </div>
             </div>
             <div className="title-with-description__media">
-              <Image
+              {/* <Image
                 src="/image-placeholder.jpg"
                 alt=""
                 className="title-with-description__img"
@@ -190,7 +221,7 @@ export default function Home() {
                 layout="intrinsic"
                 width={450}
                 height={300}
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -262,7 +293,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="about__media">
-                <Image
+                {/* <Image
                   src="/image-placeholder.jpg"
                   alt=""
                   className="about__img"
@@ -270,7 +301,7 @@ export default function Home() {
                   layout="intrinsic"
                   width={450}
                   height={300}
-                />
+                /> */}
               </div>
             </div>
           </div>

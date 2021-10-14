@@ -47,7 +47,12 @@ export default function Contacts() {
                 </div>
               </div>
               <div className="about__media">
-                <Image
+              <img
+                src="/image-placeholder.jpg"
+                alt="image-placeholder"
+                className="about__img"
+              />
+                {/* <Image
                   src="/image-placeholder.jpg"
                   alt=""
                   className="about__img"
@@ -55,7 +60,7 @@ export default function Contacts() {
                   layout="intrinsic"
                   width={450}
                   height={300}
-                />
+                /> */}
               </div>
             </div>
           </div>

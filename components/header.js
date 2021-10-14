@@ -32,7 +32,7 @@ export default function Header() {
             <a className={router.pathname == "/about" ? "ui-item ui-item_active header__menu-item ": "ui-item header__menu-item"}>О нас</a>
           </Link>
           <Link href="/news">
-            <a className={router.pathname == "/news" ? "ui-item ui-item_active header__menu-item ": "ui-item header__menu-item"}>Новости</a>
+            <a className={router.pathname.includes('news') ? "ui-item ui-item_active header__menu-item ": "ui-item header__menu-item"}>Новости</a>
           </Link>
           <Link href="/contacts">
             <a className={router.pathname == "/contacts" ? "ui-item ui-item_active header__menu-item ": "ui-item header__menu-item"}>Контакты</a>

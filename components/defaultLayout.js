@@ -3,13 +3,13 @@ import CustomHead from "./customHead";
 
 /** Дефолтное расположение эементов */
 export default function DefaultLayout({
-  title = "default title",
-  description = "default description",
+  title = "Galiley Enterprise",
+  description = "Описание",
   children
-}) {
+} = {}) {
   return (
     <>
-      <CustomHead />
+      <CustomHead title={title} description={description}/>
       {children}
       <Copyright />
     </>

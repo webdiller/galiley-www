@@ -28,19 +28,18 @@ export default function News({ data }) {
               {data.map(({ id, title, content, slug, image }) => (
                 <Link passHref key={id} href={`/news/${slug}`}>
                   <div className="ui-cards__item">
-                    {/* <img 
+                    <img 
                     src={`${api}${image.formats.medium.url}`}
                     alt={`${api}${image.formats.medium.name}`}
                     className="ui-cards__img"
-                  /> */}
-                    <Image
+                  />
+                    {/* <Image
                       width={400}
                       height={400}
                       src={`${api}${image.formats.medium.url}`}
                       alt={`${api}${image.formats.medium.name}`}
                       className="ui-cards__img"
-                      // src="/img2.webp"
-                    />
+                    /> */}
                     <p className="ui-title ui-title_6 ui-cards__title">{title}</p>
                     <p className="ui-cards__description">{content}</p>
                   </div>

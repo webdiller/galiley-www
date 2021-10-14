@@ -39,7 +39,12 @@ export default function About() {
               </div>
             </div>
             <div className="title-with-description__media">
-              <Image
+              <img
+                src="/image-placeholder.jpg"
+                alt="image-placeholder"
+                className="title-with-description__img"
+              />
+              {/* <Image
                 src="/image-placeholder.jpg"
                 alt=""
                 className="title-with-description__img"
@@ -47,7 +52,7 @@ export default function About() {
                 layout="intrinsic"
                 width={450}
                 height={300}
-              />
+              /> */}
             </div>
           </div>
         </div>
