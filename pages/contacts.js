@@ -1,6 +1,6 @@
 import DefaultLayout from "@/components/defaultLayout";
 import { HiCheckCircle } from "react-icons/hi";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Contacts() {
   return (

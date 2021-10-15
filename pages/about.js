@@ -1,5 +1,5 @@
 import DefaultLayout from "@/components/defaultLayout";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function About() {
   return (

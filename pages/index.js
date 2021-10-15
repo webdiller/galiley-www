@@ -2,7 +2,7 @@ import DefaultLayout from "@/components/defaultLayout";
 import { IoIosSpeedometer } from "react-icons/io";
 import { MdHighQuality } from "react-icons/md";
 import { HiCheckCircle } from "react-icons/hi";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Home() {
   return (

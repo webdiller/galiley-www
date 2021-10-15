@@ -1,6 +1,7 @@
 import DefaultLayout from "@/components/defaultLayout";
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
+
 export default function News({ data }) {
   const api = process.env.NEXT_PUBLIC_LOCAL_API;
 
