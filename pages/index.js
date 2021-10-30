@@ -1,7 +1,7 @@
 import DefaultLayout from "@/components/defaultLayout";
 import { IoIosSpeedometer } from "react-icons/io";
-import { MdHighQuality } from "react-icons/md";
-import { HiCheckCircle } from "react-icons/hi";
+import { BsKey } from "react-icons/bs";
+import { MdOutlineIntegrationInstructions, MdArchitecture } from "react-icons/md";
 // import Image from "next/image";
 
 export default function Home() {
@@ -11,15 +11,18 @@ export default function Home() {
         <div className="welcome">
           <div className="container welcome__wrapper">
             <div className="welcome__content">
-              <h1 className="ui-title welcome__title">Powering the future of fitness</h1>
+              <h1 className="ui-title welcome__title">
+                Galiley Enterprise - Технологическая компания, которая занимается внедрением
+                цифровых решений в бизнесе
+              </h1>
               <p className="ui-text welcome__subtitle">
-                Innovative fitness management software, helping growing businesses retain and scale
-                their brand and revenue.
+                Технологии - с помощью них мы можем упростить нашу жизнь.
               </p>
-              <button className="ui-btn ui-btn_animated welcome__btn">Our showcases</button>
+              {/* TODO: Расскоментировать, когда будет контент */}
+              {/* <button className="ui-btn ui-btn_animated welcome__btn">Our showcases</button> */}
             </div>
             <div className="welcome__media">
-              <img src="/image-placeholder.jpg" alt="image-placeholder" className="welcome__img" />
+              <img src="/illustration-1.svg" alt="image-placeholder" className="welcome__img" />
               {/* <Image
                 src="/image-placeholder.jpg"
                 alt=""
@@ -33,8 +36,26 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="horizontal-blocks">
+          <div className="container horizontal-blocks__wrapper">
+            <div className="horizontal-blocks__item">
+              <p className="ui-title ui-title_6 horizontal-blocks__title">Наша задача</p>
+              <p className="ui-text horizontal-blocks__description">
+                Автоматизация любых бизнесов в сфере Информационных Технологий
+              </p>
+            </div>
+            <div className="horizontal-blocks__item">
+              <p className="ui-title ui-title_6 horizontal-blocks__title">Наша цель</p>
+              <p className="ui-text horizontal-blocks__description">
+                Создать Технологическую компанию, которая занимается развитием всех сфер нашей
+                жизни.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* BLOCK: Designed for fitness tailored to you */}
-        <div className="title-with-cards">
+        {/* <div className="title-with-cards">
           <div className="container title-with-cards__wrapper">
             <div className="title-with-cards__top">
               <h2 className="ui-title ui-title_2 title-with-cards__title">
@@ -55,15 +76,6 @@ export default function Home() {
                   alt="image-placeholder"
                   className="welcome__img"
                 />
-                {/* <Image
-                  src="/image-placeholder.jpg"
-                  alt=""
-                  className="ui-cards__img"
-                  objectFit="cover"
-                  layout="intrinsic"
-                  width={450}
-                  height={300}
-                /> */}
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -77,15 +89,6 @@ export default function Home() {
                   alt="image-placeholder"
                   className="welcome__img"
                 />
-                {/* <Image
-                  src="/image-placeholder.jpg"
-                  alt=""
-                  className="ui-cards__img"
-                  objectFit="cover"
-                  layout="intrinsic"
-                  width={450}
-                  height={300}
-                /> */}
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -99,15 +102,6 @@ export default function Home() {
                   alt="image-placeholder"
                   className="welcome__img"
                 />
-                {/* <Image
-                  src="/image-placeholder.jpg"
-                  alt=""
-                  className="ui-cards__img"
-                  objectFit="cover"
-                  layout="intrinsic"
-                  width={450}
-                  height={300}
-                /> */}
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -121,15 +115,6 @@ export default function Home() {
                   alt="image-placeholder"
                   className="welcome__img"
                 />
-                {/* <Image
-                  src="/image-placeholder.jpg"
-                  alt=""
-                  className="ui-cards__img"
-                  objectFit="cover"
-                  layout="intrinsic"
-                  width={450}
-                  height={300}
-                /> */}
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -143,15 +128,6 @@ export default function Home() {
                   alt="image-placeholder"
                   className="welcome__img"
                 />
-                {/* <Image
-                  src="/image-placeholder.jpg"
-                  alt=""
-                  className="ui-cards__img"
-                  objectFit="cover"
-                  layout="intrinsic"
-                  width={450}
-                  height={300}
-                /> */}
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -165,15 +141,6 @@ export default function Home() {
                   alt="image-placeholder"
                   className="welcome__img"
                 />
-                {/* <Image
-                  src="/image-placeholder.jpg"
-                  alt=""
-                  className="ui-cards__img"
-                  objectFit="cover"
-                  layout="intrinsic"
-                  width={450}
-                  height={300}
-                /> */}
                 <p className="ui-title ui-title_6 ui-cards__title">HIIT and fitness studios</p>
                 <p className="ui-cards__description">
                   Manage your studio and boost your brand with our powerful fitness management
@@ -182,10 +149,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* BLOCK: Title with description */}
-        <div className="title-with-description">
+        {/* TODO: Расскоментировать когда появится контент */}
+        {/* <div className="title-with-description">
           <div className="container title-with-description__wrapper">
             <div className="title-with-description__content">
               <h2 className="ui-title ui-title_2 title-with-description__title">
@@ -213,18 +181,14 @@ export default function Home() {
               </div>
             </div>
             <div className="title-with-description__media">
-              {/* <Image
+              <img
                 src="/image-placeholder.jpg"
-                alt=""
+                alt="image-placeholder"
                 className="title-with-description__img"
-                objectFit="cover"
-                layout="intrinsic"
-                width={450}
-                height={300}
-              /> */}
+              />
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* BLOCK: Features */}
         <div className="features">
@@ -233,30 +197,34 @@ export default function Home() {
             <div className="features__items">
               <div className="features__item">
                 <IoIosSpeedometer className="features__item-icon" />
-                <p className="ui-title ui-title_6 features__item-title">Скорость</p>
+                {/* <p className="ui-title ui-title_6 features__item-title">Скорость</p> */}
                 <p className="ui-text features__item-text">
-                  Мы работаем, используя передовые подходы к разработке, что позволяет в кратчайшие
-                  сроки (2-4 недели) запустить ваш продукт.
+                  Разработка различных интеграционных систем, CRM, ERP, ECM за промежуток от 1-го до
+                  2-х месяцев, благодаря своему опыту подобных работ и наличию готовых модулей для
+                  решения проблем.
                 </p>
               </div>
 
               <div className="features__item">
-                <MdHighQuality className="features__item-icon" />
-                <p className="ui-title ui-title_6 features__item-title">Качество</p>
+                <MdArchitecture className="features__item-icon" />
+                {/* <p className="ui-title ui-title_6 features__item-title">Качество</p> */}
                 <p className="ui-text features__item-text">
-                  Наши специалисты находятся на рубеже информационных технологий и постоянно
-                  оттачивают свои навыки, чтобы всегда предоставлять решения, соответствующие
-                  современным требованиям качества
+                  Профессиональная разработка архитектуры ПО, куда входит разработка и
+                  проектирование всех макетов и других составляющих дизайна проекта, мы владеем
+                  командой профессионалов, куда входят архитекторы ПО, UI/UX Дизайнеры, Web и
+                  мобильные разработчики
                 </p>
               </div>
 
               <div className="features__item">
-                <MdHighQuality className="features__item-icon" />
-                <p className="ui-title ui-title_6 features__item-title">Опыт</p>
+                <BsKey className="features__item-icon" />
+                {/* <p className="ui-title ui-title_6 features__item-title">Опыт</p> */}
                 <p className="ui-text features__item-text">
-                  Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
-                  тексты. Он толку обеспечивает свое букв страна знаках! Раз заманивший домах вдали
-                  путь рот журчит сбить.
+                  Разработка проекта под ключ. В нашем Отделе Информационных Технологий реализуют
+                  мечты. Создание плана конструирования(Технического Задания) производится
+                  бесплатно, с условием если за реализацию проекта возьмемся мы, Galiley Enterprise.
+                  С нашим планом конструирования(Техническим Заданием) проект сможет реализовать
+                  любой грамотный разработчик или команда разработчиков.
                 </p>
               </div>
             </div>
@@ -269,13 +237,20 @@ export default function Home() {
             <p className="ui-title ui-title_2 about__title">О нас</p>
             <div className="about__content">
               <div className="about__left">
-                <p className="ui-title ui-title_3 about__subtitle">Brand and marketing tools</p>
+                {/* TODO: Расскоментировать когда будет контент */}
+                {/* <p className="ui-title ui-title_3 about__subtitle">Brand and marketing tools</p> */}
+
                 <p className="ui-text about__text">
-                  Amplify your brand, engage with your customer base and generate more revenue with
-                  our selection of effective and easy-to-use brand and marketing tools.
+                Группа “Galiley Enterprise” в Отделе Информационных Технологий занимается
+                  разработкой <strong>Web-Приложений</strong>, <strong>мобильных приложений</strong>, <strong>внедрением ERP</strong>, <strong>CRM</strong>, <strong>ECM</strong> и
+                  прочих потребностей заказчиков для автоматизации бизнесов и бизнес-процессов. К
+                  нам обращаются, чтобы заказать проект приложения под ключ или сэкономить на нем
+                  время разработки и ресурсы, выбрав готовый вариант, для того, чтобы его можно было
+                  подстроить под компанию.
                 </p>
 
-                <div className="ui-list about__list">
+                {/* TODO: Расскоментировать когда будет контент */}
+                {/* <div className="ui-list about__list">
                   <p className="ui-list__title">Explore Marketing Tools</p>
                   <ul className="ui-list__items">
                     <li className="ui-list__item">
@@ -290,9 +265,10 @@ export default function Home() {
                       <HiCheckCircle className="ui-list__icon" /> Custom mobile member experience
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
               <div className="about__media">
+                <img src="/illustration-2.svg" alt="image-placeholder" className="about__img" />
                 {/* <Image
                   src="/image-placeholder.jpg"
                   alt=""

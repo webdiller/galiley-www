@@ -1,0 +1,18 @@
+.vertical-blocks {
+  &__wrapper {
+      margin: 50px auto;
+  }
+  &__item {
+    display: block;
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+  }
+  &__title {
+    display: block;
+    margin-bottom: 10px;
+  }
+  &__description {
+    display: block;
+  }
+}

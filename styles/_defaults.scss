@@ -106,6 +106,12 @@ img {
       background-position: right center;
     }
   }
+  &_small {
+    min-height: 45px;
+    @include media("<=768px") {
+      font-size: 16px;
+    }
+  }
 }
 
 .ui-item {
@@ -213,8 +219,8 @@ img {
     max-width: 1400px;
   }
   &_main {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     @include media("<=1200px") {
       margin: 50px 0;
     }
@@ -287,8 +293,10 @@ img {
     list-style-type: none;
   }
   &__item {
-    display: inline-block;
-    vertical-align: middle;
+    display: inline-flex;
+    @include media("<=576px") {
+      font-size: 16px;
+    }
     &:not(:last-child) {
       margin-bottom: 10px;
     }
@@ -298,9 +306,59 @@ img {
   }
   &__icon {
     position: relative;
-    top: -1px;
+    top: 5px;
     display: inline-block;
     vertical-align: middle;
+    margin-right: 10px;
+
+    min-width: 20px;
+
     color: rgb(55, 170, 85);
+  }
+  &_vertical {
+    .ui-list__items {
+      a {
+        margin-left: 10px;
+        @include media("<=991px") {
+          margin-left: 0;
+        }
+      }
+    }
+    .ui-list__item {
+      @include media("<=991px") {
+        flex-direction: column;
+      }
+    }
+    .ui-list__icon {
+      @include media("<=991px") {
+        margin-right: 0;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+.checkbox-button {
+  input {
+    position: absolute;
+    left: -9999px;
+    &:focus {
+      + label {
+        background: #89baff;
+        color: #fff;
+      }
+    }
+    &:checked {
+      + label {
+        background: #3388fd;
+        color: #fff;
+      }
+    }
+  }
+  label {
+    width: 100%;
+    transition: all 0.3s ease;
+    background: #f0f0f0;
+    color: #000;
   }
 }

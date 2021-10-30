@@ -31,18 +31,19 @@ export default function Header() {
           <Link href="/about">
             <a className={router.pathname == "/about" ? "ui-item ui-item_active header__menu-item ": "ui-item header__menu-item"}>О нас</a>
           </Link>
-          <Link href="/news">
+          {/* <Link href="/news">
             <a className={router.pathname.includes('news') ? "ui-item ui-item_active header__menu-item ": "ui-item header__menu-item"}>Новости</a>
-          </Link>
+          </Link> */}
           <Link href="/contacts">
             <a className={router.pathname == "/contacts" ? "ui-item ui-item_active header__menu-item ": "ui-item header__menu-item"}>Контакты</a>
           </Link>
-          <Link href="/services">
-            <a className={router.pathname == "/services" ? "ui-item ui-item_active header__menu-item ": "ui-item header__menu-item"}>Услуги</a>
+          <Link href="/truth">
+            <a className={router.pathname == "/truth" ? "ui-item ui-item_active header__menu-item ": "ui-item header__menu-item"}>Истина</a>
           </Link>
-          <Link href="/features">
+          {/* TODO: Расскоментировать, когда будет готово */}
+          {/* <Link href="/features">
             <a className={router.pathname == "/features" ? "ui-item ui-item_active header__menu-item ": "ui-item header__menu-item"}>Преимущства</a>
-          </Link>
+          </Link> */}
         </nav>
 
         <button onClick={()=>refMenu.current.classList.toggle('active')} className="header__bar"><AiOutlineMenu/></button>

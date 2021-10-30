@@ -54,6 +54,7 @@
       padding-right: 0;
 
       background-color: #fff;
+      box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 
       opacity: 0;
       visibility: hidden;
@@ -70,6 +71,9 @@
     }
   }
   &__menu-item {
+    @include media("<=576px") {
+      font-size: 16px;
+    }
     &:not(:last-child) {
       margin-right: 20px;
       @include media("<=1200px") {

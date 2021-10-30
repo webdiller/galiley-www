@@ -1,7 +1,7 @@
 .about {
   &__wrapper {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   &__title {
     margin-bottom: 40px;
@@ -33,6 +33,9 @@
   }
   &__list {
     margin-top: 15px;
+    &_alt {
+      margin-bottom: 20px;
+    }
   }
   &__text {
     &:not(:last-child) {
@@ -40,9 +43,6 @@
     }
   }
   &__media {
-    div {
-      border-radius: 10px;
-    }
     @include media("<=768px") {
       display: block;
       margin: 0 auto;
@@ -50,5 +50,6 @@
     }
   }
   &__img {
+    border-radius: 10px;
   }
 }

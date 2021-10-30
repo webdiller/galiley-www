@@ -1,0 +1,27 @@
+.horizontal-blocks {
+  &__wrapper {
+      display:flex;
+      margin: 50px auto;
+      justify-content: space-between;
+      @include media("<=576px") {
+        flex-direction: column;
+      }
+  }
+  &__item {
+    display: block;
+    &:not(:last-child) {
+        margin-right: 30px;
+        @include media("<=576px") {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+    }
+  }
+  &__title {
+    display: block;
+    margin-bottom: 10px;
+  }
+  &__description {
+    display: block;
+  }
+}

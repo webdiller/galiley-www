@@ -10,6 +10,6 @@ https://www.glofox.com/
 * преимущества
 
 ## доступы
-- strapi    
+- strapi development    
 email: eugenefromrus@gmail.com  
 password: Qwerty123   
