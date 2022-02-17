@@ -16,7 +16,7 @@ export default function Home() {
                 цифровых решений в бизнесе
               </h1>
               <p className="ui-text welcome__subtitle">
-                Технологии - с помощью них мы можем упростить нашу жизнь.
+                Технологии - с помощью них <br /> мы можем упростить нашу жизнь.
               </p>
               {/* TODO: Расскоментировать, когда будет контент */}
               {/* <button className="ui-btn ui-btn_animated welcome__btn">Our showcases</button> */}

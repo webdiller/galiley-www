@@ -1,15 +1,10 @@
 ## донор:   
 https://www.glofox.com/   
 
-## страницы
-* главная
-* о нас
-* новости
-* контакты
-* услуги
-* преимущества
+## Запуск проекта
+- yarn - Инициализация пакетов
 
-## доступы
-- strapi development    
-email: eugenefromrus@gmail.com  
-password: Qwerty123   
+## Работа с проектом
+- yarn dev - Режим разработки
+- yarn build - Сборка проекта
+- yarn start - Запуск собранного проекта
