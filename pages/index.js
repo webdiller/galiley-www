@@ -2,7 +2,9 @@ import DefaultLayout from "@/components/defaultLayout";
 import { IoIosSpeedometer } from "react-icons/io";
 import { BsKey } from "react-icons/bs";
 import { MdOutlineIntegrationInstructions, MdArchitecture } from "react-icons/md";
-// import Image from "next/image";
+import illustration_1 from '@/base/illustration-1.svg';
+import illustration_2 from '@/base/illustration-2.svg';
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -22,16 +24,11 @@ export default function Home() {
               {/* <button className="ui-btn ui-btn_animated welcome__btn">Our showcases</button> */}
             </div>
             <div className="welcome__media">
-              <img src="/illustration-1.svg" alt="image-placeholder" className="welcome__img" />
-              {/* <Image
-                src="/image-placeholder.jpg"
-                alt=""
-                className="welcome__img"
-                objectFit="cover"
-                layout="intrinsic"
-                width={800}
-                height={800}
-              /> */}
+              <Image
+                src={illustration_1}
+                alt="Иллюстрационная картинка"
+                layout="responsive"
+              />
             </div>
           </div>
         </div>
@@ -268,16 +265,11 @@ export default function Home() {
                 </div> */}
               </div>
               <div className="about__media">
-                <img src="/illustration-2.svg" alt="image-placeholder" className="about__img" />
-                {/* <Image
-                  src="/image-placeholder.jpg"
-                  alt=""
-                  className="about__img"
-                  objectFit="cover"
-                  layout="intrinsic"
-                  width={450}
-                  height={300}
-                /> */}
+                <Image
+                  src={illustration_2}
+                  alt="Иллюстрационная картинка"
+                  layout="responsive"
+                />
               </div>
             </div>
           </div>

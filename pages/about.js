@@ -5,7 +5,9 @@ import { HiCheckCircle } from "react-icons/hi";
 
 import { BsKey } from "react-icons/bs";
 import { MdOutlineIntegrationInstructions, MdArchitecture } from "react-icons/md";
-// import Image from "next/image";
+import illustration_1 from '@/base/illustration-1.svg';
+import illustration_2 from '@/base/illustration-2.svg';
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -64,20 +66,11 @@ export default function About() {
               </div>
             </div>
             <div className="title-with-description__media">
-              <img
-                src="/illustration-1.svg"
-                alt="image-placeholder"
-                className="title-with-description__img"
+              <Image
+                src={illustration_1}
+                alt="Иллюстрационная картинка"
+                layout="responsive"
               />
-              {/* <Image
-                src="/image-placeholder.jpg"
-                alt=""
-                className="title-with-description__img"
-                objectFit="cover"
-                layout="intrinsic"
-                width={450}
-                height={300}
-              /> */}
             </div>
           </div>
         </div>

@@ -328,6 +328,9 @@ img {
       @include media("<=991px") {
         flex-direction: column;
       }
+      @include media("<=576px") {
+        a {font-size: 16px;}
+      }
     }
     .ui-list__icon {
       @include media("<=991px") {

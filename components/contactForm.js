@@ -44,53 +44,10 @@ export default function ContactForm() {
               placeholder="Расскажите о вашем проекте"></textarea>
           </div>
           <div className="contact-form__title">Планируемый бюджет</div>
-          <div className="contact-form__checkboxes">
-            <CheckboxButton
-              customClass="contact-form__checkbox"
-              type="radio"
-              name="expectedMoney"
-              value="100 000 — 500 000 ₽"
-              labelName="100 000 — 500 000 ₽"
-            />
-            <CheckboxButton
-              customClass="contact-form__checkbox"
-              type="radio"
-              name="expectedMoney"
-              value="100 000 — 500 000 ₽"
-              labelName="100 000 — 500 000 ₽"
-            />
-            <CheckboxButton
-              customClass="contact-form__checkbox"
-              type="radio"
-              name="expectedMoney"
-              value="500 000 — 1 000 000 ₽"
-              labelName="500 000 — 1 000 000 ₽"
-            />
-            <CheckboxButton
-              customClass="contact-form__checkbox"
-              type="radio"
-              name="expectedMoney"
-              value="1 000 000 — 3 000 000 ₽"
-              labelName="1 000 000 — 3 000 000 ₽"
-            />
-            <CheckboxButton
-              customClass="contact-form__checkbox"
-              type="radio"
-              name="expectedMoney"
-              value="3 000 000 — ......  ₽"
-              labelName="3 000 000 — ......  ₽"
-            />
-            <CheckboxButton
-              customClass="contact-form__checkbox"
-              type="radio"
-              name="expectedMoney"
-              value="Хочу проконсультироваться"
-              labelName="Хочу проконсультироваться"
-            />
+          <div className="contact-form__fields">
+            <input name="expectedMoney" className="contact-form__input" placeholder="Сумма в руб." type="text" />
           </div>
-          <button className="ui-btn contact-form__submit-btn" type="submit">
-            Отправить
-          </button>
+          <button className="ui-btn contact-form__submit-btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>

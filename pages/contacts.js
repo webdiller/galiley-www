@@ -1,7 +1,8 @@
 import DefaultLayout from "@/components/defaultLayout";
 import { AiFillPhone, AiOutlineMail, AiOutlineWhatsApp } from "react-icons/ai";
 
-// import Image from "next/image";
+import Image from "next/image";
+import illustration_3 from '@/base/illustration-3.svg';
 import ContactForm from "../components/contactForm";
 
 export default function Contacts() {
@@ -56,16 +57,11 @@ export default function Contacts() {
                 </div>
               </div>
               <div className="about__media">
-                <img src="/illustration-3.svg" alt="image-placeholder" className="about__img" />
-                {/* <Image
-                  src="/image-placeholder.jpg"
-                  alt=""
-                  className="about__img"
-                  objectFit="cover"
-                  layout="intrinsic"
-                  width={450}
-                  height={300}
-                /> */}
+                <Image
+                  src={illustration_3}
+                  alt="Иллюстрационная картинка"
+                  layout="responsive"
+              />
               </div>
             </div>
           </div>

@@ -11,9 +11,9 @@ export default function Services() {
         <div className="features">
           <div className="container features__wrapper">
             <div className="ui-text features__description">
-              В первую очередь для нас важны все сферы жизни человека. Являясь в основном на
-              сегодняшний день компанией, которая занимается разработкой Прикладного ПО, мы с
-              уверенностью заявляем о том, что это не конец наших компетенций. Мы идем вперед
+              В первую очередь для нас важны все сферы жизни человека. <br /> Являясь в основном на
+              сегодняшний день компанией, которая занимается разработкой Прикладного ПО, <br /> мы с
+              уверенностью заявляем о том, что это не конец наших компетенций. <br /> Мы идем вперед
               навстречу новым свершениям.
               <br />
               <br />
@@ -24,7 +24,7 @@ export default function Services() {
               <div className="features__item">
                 <FaSquarespace className="features__item-icon" />
                 <p className="ui-title ui-title_6 features__item-title">
-                  Отдел Информационных Технологий
+                  Отдел <br /> Информационных Технологий
                 </p>
                 {/* <p className="ui-text features__item-text">
                 Отдел Информационных Технологий
@@ -33,7 +33,7 @@ export default function Services() {
 
               <div className="features__item">
                 <FaFlagCheckered className="features__item-icon" />
-                <p className="ui-title ui-title_6 features__item-title">Отдел Стартапов</p>
+                <p className="ui-title ui-title_6 features__item-title">Отдел <br /> Стартапов</p>
                 {/* <p className="ui-text features__item-text">
                 Отдел Стартапов
                 </p> */}
@@ -42,14 +42,14 @@ export default function Services() {
               <div className="features__item">
                 <FaIndustry className="features__item-icon" />
                 <p className="ui-title ui-title_6 features__item-title">
-                  Отдел Промышленных Технологий
+                  Отдел <br /> Промышленных Технологий
                 </p>
                 <p className="ui-text features__item-text">(В Разработке)</p>
               </div>
 
               <div className="features__item">
                 <BiTransfer className="features__item-icon" />
-                <p className="ui-title ui-title_6 features__item-title">Отдел Логистики</p>
+                <p className="ui-title ui-title_6 features__item-title">Отдел <br /> Логистики</p>
                 <p className="ui-text features__item-text">(В Разработке)</p>
               </div>
             </div>
