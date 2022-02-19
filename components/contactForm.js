@@ -1,33 +1,35 @@
-import CheckboxButton from "../ui/checkbox/checkboxButton";
+import axios from "axios";
 /**
- * Простая html форма. 
- * При submit, собираются все дочерние элементы формы, кроме кнопки, забираются из них значения и записываются в массив. 
+ * Простая html форма.
+ * При submit, собираются все дочерние элементы формы, кроме кнопки, забираются из них значения и записываются в массив.
  * Так же есть кастомный чекбокс в виде кнопки. Форма почти как на сайте: https://sixhands.co/
  */
 export default function ContactForm() {
-  const onSubmit = e => {
+  const onSubmit = async e => {
     e.preventDefault();
+    const formData = {};
+    Array.from(e.currentTarget.elements).forEach(field => {
+      if (!field.name) return;
+      formData[field.name] = field.value;
+    });
 
-    let data = [];
-    let form = e.target;
-    for (let i = 0; i < form.elements.length; i++) {
-      let e = form.elements[i];
+    let config = {
+      method: "post",
+      url: `/api/mail`,
+      headers: {
+        "Content-Type": "application/json"
+      },
+      data: formData
+    };
 
-      if (e.type !== "submit") {
-        if (e.name !== "expectedMoney") {
-          data.push({
-            name: e.name,
-            value: e.value
-          });
-        } else if (e.name === "expectedMoney" && e.checked) {
-          data.push({
-            name: e.name,
-            value: e.value
-          });
-        }
+    try {
+      const response = await axios(config);
+      if (response.status === 200) {
+        console.log(response);
       }
+    } catch (error) {
+      console.log(error);
     }
-    console.log(data);
   };
   return (
     <div className="contact-form">
@@ -39,15 +41,22 @@ export default function ContactForm() {
             <input name="phone" className="contact-form__input" placeholder="Телефон" type="text" />
             <input name="email" className="contact-form__input" placeholder="Email" type="email" />
             <textarea
-              name="about"
+              name="description"
               className="contact-form__textarea"
               placeholder="Расскажите о вашем проекте"></textarea>
           </div>
           <div className="contact-form__title">Планируемый бюджет</div>
           <div className="contact-form__fields">
-            <input name="expectedMoney" className="contact-form__input" placeholder="Сумма в руб." type="text" />
+            <input
+              name="expectedMoney"
+              className="contact-form__input"
+              placeholder="Планируемый бюджет"
+              type="text"
+            />
           </div>
-          <button className="ui-btn contact-form__submit-btn" type="submit">Отправить</button>
+          <button className="ui-btn contact-form__submit-btn" type="submit">
+            Отправить
+          </button>
         </form>
       </div>
     </div>

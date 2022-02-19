@@ -4,7 +4,7 @@ import CustomHead from "./customHead";
 /** Дефолтное расположение эементов */
 export default function DefaultLayout({
   title = "Galiley Enterprise",
-  description = "Описание",
+  description = "Galiley Enterprise - Технологическая компания, которая занимается внедрением цифровых решений в бизнесе",
   children
 } = {}) {
   return (
