@@ -58,10 +58,11 @@ export default function ContactForm() {
         <form onSubmit={e => onSubmit(e)} className="contact-form__form">
           <div className="contact-form__title">О Вас</div>
           <div className="contact-form__fields">
-            <input name="name" className="contact-form__input" placeholder="Имя" type="text" />
-            <input name="phone" className="contact-form__input" placeholder="Телефон" type="text" />
-            <input name="email" className="contact-form__input" placeholder="Email" type="email" />
+            <input maxLength={20} name="name" className="contact-form__input" placeholder="Имя" type="text" />
+            <input maxLength={20} name="phone" className="contact-form__input" placeholder="Телефон" type="text" />
+            <input maxLength={30} name="email" className="contact-form__input" placeholder="Email" type="email" />
             <textarea
+              maxLength={600}
               name="description"
               className="contact-form__textarea"
               placeholder="Расскажите о вашем проекте"></textarea>
@@ -69,6 +70,7 @@ export default function ContactForm() {
           <div className="contact-form__title">Планируемый бюджет</div>
           <div className="contact-form__fields">
             <input
+              maxLength={20}
               name="expectedMoney"
               className="contact-form__input mr-0"
               placeholder="Планируемый бюджет"

@@ -25,7 +25,7 @@ export default async function handler(req, res) {
 
   const mailData = {
     from: "eugenefromrus@gmail.com",
-    to: "eugenefromrus@gmail.com",
+    to: process.env.EMAIL_SEND_TO,
     subject: `Заявка с сайта galiley-enterprise.ru`,
     html: `
       <p>Заявка с сайта galiley-enterprise.ru</p>
