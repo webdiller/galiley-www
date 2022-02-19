@@ -1,10 +1,12 @@
 import axios from "axios";
+import { useRef } from "react";
 /**
  * Простая html форма.
  * При submit, собираются все дочерние элементы формы, кроме кнопки, забираются из них значения и записываются в массив.
  * Так же есть кастомный чекбокс в виде кнопки. Форма почти как на сайте: https://sixhands.co/
  */
 export default function ContactForm() {
+  const btnRef = useRef();
   const onSubmit = async e => {
     e.preventDefault();
     const formData = {};
@@ -22,14 +24,33 @@ export default function ContactForm() {
       data: formData
     };
 
+    btnRef.current.innerHTML = "Отправка...";
+    btnRef.current.classList.add("loading");
     try {
       const response = await axios(config);
+
       if (response.status === 200) {
-        console.log(response);
+        btnRef.current.innerHTML = "Успешно отправлено";
+        btnRef.current.classList.remove("loading");
+        btnRef.current.classList.add("success");
+
+        setTimeout(() => {
+          btnRef.current.innerHTML = "Отправить";
+          btnRef.current.classList.remove("success");
+        }, 3000);
       }
     } catch (error) {
       console.log(error);
+      btnRef.current.innerHTML = "Ошибка при отправке";
+      btnRef.current.classList.remove("loading");
+      btnRef.current.classList.add("error");
+      setTimeout(() => {
+        btnRef.current.innerHTML = "Отправить";
+        btnRef.current.classList.remove("error");
+      }, 3000);
     }
+
+    e.target.reset();
   };
   return (
     <div className="contact-form">
@@ -49,12 +70,12 @@ export default function ContactForm() {
           <div className="contact-form__fields">
             <input
               name="expectedMoney"
-              className="contact-form__input"
+              className="contact-form__input mr-0"
               placeholder="Планируемый бюджет"
               type="text"
             />
           </div>
-          <button className="ui-btn contact-form__submit-btn" type="submit">
+          <button ref={btnRef} className="ui-btn contact-form__submit-btn" type="submit">
             Отправить
           </button>
         </form>

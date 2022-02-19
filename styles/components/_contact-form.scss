@@ -102,8 +102,52 @@
   }
   &__submit-btn {
     width: 100%;
+    &.loading {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      pointer-events: none;
+      cursor: wait;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150%;
+        height: 100%;
+        background: repeating-linear-gradient(
+        60deg, 
+        transparent, 
+        transparent 0.75rem, 
+        rgba(255,255,255,.1) 0.75rem, 
+        rgba(255,255,255,.1) 1.5rem);
+        animation: load 1s infinite linear;
+        transition: all .3s ease;
+        pointer-events: none;
+      }
+    }
+    &.success {
+      pointer-events: none;
+      background-image: none;
+      background-color: #03d036;
+    }
+    &.error {
+      pointer-events: none;
+      background-image: none;
+      background-color: rgb(241, 48, 0);
+    }
     @include media("<=768px") {
       font-size: 16px;
     }
+  }
+  
+}
+
+@keyframes load {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1.75rem);
   }
 }
